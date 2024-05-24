@@ -1,0 +1,161 @@
+Create a file named "data.txt" and write the following lines in it(write as it is).
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+compose the commands fulfilled following requirement
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ cat data.txt
+Linux is open source.
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+
+i.)count the no. of words ,characters and lines from above 2 file.(man wc)
+Answer=>
+no.of words--
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ wc -w data.txt
+25 data.txt
+
+no.of characters--
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ man wc
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ wc -c data.txt
+145 data.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ wc --bytes data.txt
+145 data.txt
+
+no.of lines--
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ wc -l data.txt
+6 data.txt
+
+*******************************************************************************************************************************
+
+ii.)list the lines having word "files" (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep "files" data.txt
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+*******************************************************************************************************************************
+
+iii.)list the lines having word "file" (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep "file" data.txt
+In Linux everything is file
+files have permissions.
+files have inode no.
+files have size.
+there are several types of files
+
+*******************************************************************************************************************************
+
+iv.)list the lines which don't have word "files" (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep -v "file" data.txt
+Linux is open source.
+
+*******************************************************************************************************************************
+
+v.)list the lines having word "have" . (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep -w "have" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+*******************************************************************************************************************************
+
+vi.)list the lines starts with letter "f" (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep "^f" data.txt
+files have permissions.
+files have inode no.
+files have size.
+
+*******************************************************************************************************************************
+
+vii.)list the lines ends with "." (man grep)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ grep "[.]$" data.txt
+Linux is open source.
+files have permissions.
+files have inode no.
+files have size.
+
+*******************************************************************************************************************************
+
+viii.)list only first two lines.(man head)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ head -2 data.txt
+Linux is open source.
+In Linux everything is file
+
+*******************************************************************************************************************************
+
+ix.)list only last three lines.(man tail)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ tail -3 data.txt
+files have inode no.
+files have size.
+there are several types of files
+
+*******************************************************************************************************************************
+
+x.)list line no.3,4 and 5 . (man head and tail)
+Answer=>
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/sunbeam git data/osc_sdm$ tail -n +3 data.txt | head -n -1
+files have permissions.
+files have inode no.
+files have size.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
