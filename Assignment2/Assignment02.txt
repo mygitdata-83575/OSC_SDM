@@ -1,0 +1,210 @@
+Qustion 1.
+
+Ans -> 
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -S
+natsu.png  499955.jpg  sasuke.jpg  naruto.jpg
+
+********************************************************************************************************************************************************************************
+
+Qustion 2.
+
+Ans -> 
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls --size
+total 3580
+ 500 499955.jpg         120 naruto.jpg   472 sasuke.jpg
+   4 Assignment01.txt  2484 natsu.png
+   
+   OR
+   
+       ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -s
+total 3580
+ 500 499955.jpg         120 naruto.jpg   472 sasuke.jpg
+   4 Assignment01.txt  2484 natsu.png
+
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -ltr
+total 3580
+-rwxr-xr-x 1 sunbeam sunbeam  510346 Dec 22 15:33 499955.jpg
+-rw-rw-r-- 1 sunbeam sunbeam  120735 Apr 25 15:28 naruto.jpg
+-rw-rw-r-- 1 sunbeam sunbeam 2542093 Apr 25 15:30 natsu.png
+-rw-rw-r-- 1 sunbeam sunbeam  481796 Apr 28 18:47 sasuke.jpg
+-rw-rw-r-- 1 sunbeam sunbeam    1325 May 20 18:06 Assignment01.txt
+
+	OR
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -lt
+total 3580
+-rw-rw-r-- 1 sunbeam sunbeam    1325 May 20 18:06 Assignment01.txt
+-rw-rw-r-- 1 sunbeam sunbeam  481796 Apr 28 18:47 sasuke.jpg
+-rw-rw-r-- 1 sunbeam sunbeam 2542093 Apr 25 15:30 natsu.png
+-rw-rw-r-- 1 sunbeam sunbeam  120735 Apr 25 15:28 naruto.jpg
+-rwxr-xr-x 1 sunbeam sunbeam  510346 Dec 22 15:33 499955.jpg
+
+********************************************************************************************************************************************************************************
+
+Qustion 3.
+
+Ans -> 
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls --inode
+4985881 499955.jpg        5003023 naruto.jpg  5003025 sasuke.jpg
+5003041 Assignment01.txt  5003024 natsu.png
+
+	OR
+	
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -i
+4985881 499955.jpg        5003023 naruto.jpg  5003025 sasuke.jpg
+4988461 Assignment01.txt  5003024 natsu.png
+
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -li
+total 3580
+4985881 -rwxr-xr-x 1 sunbeam sunbeam  510346 Dec 22 15:33 499955.jpg
+4988461 -rw-rw-r-- 1 sunbeam sunbeam    2337 May 20 18:11 Assignment01.txt
+5003023 -rw-rw-r-- 1 sunbeam sunbeam  120735 Apr 25 15:28 naruto.jpg
+5003024 -rw-rw-r-- 1 sunbeam sunbeam 2542093 Apr 25 15:30 natsu.png
+5003025 -rw-rw-r-- 1 sunbeam sunbeam  481796 Apr 28 18:47 sasuke.jpg
+
+
+********************************************************************************************************************************************************************************
+
+Qustion 4.
+
+Ans -> 
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -d */
+Assignment_01/  Assignment_05/
+
+********************************************************************************************************************************************************************************
+
+Qustion 5.
+
+Ans -> 
+	1.
+		ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ cat > Slayer
+Ashish Jain
+	
+	2.
+		ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ cat >> Slayer 
+MadhyaPradesh , Damoh-470661
+
+********************************************************************************************************************************************************************************
+
+Qustion 6.
+
+Ans -> 
+
+Current Time Stamp :
+	ls -lt Slayer
+	-rw-rw-r-- 1 sunbeam sunbeam 41 May 20 18:29 Slayer
+
+Changed Time Stamp :
+	
+	touch -t 202005271430 Slayer
+	
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -lt Slayer
+-rw-rw-r-- 1 sunbeam sunbeam 41 May 27  2020 Slayer
+
+********************************************************************************************************************************************************************************
+
+Qustion 7.
+
+Ans -> 
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ mkdir one
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01$ cd one 
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ touch 1.txt 11.txt 111.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ mkdir two
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ cd two
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two$ touch 2.txt 22.txt 222.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two$ mkdir three
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two$ cd three
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three$ touch 3.txt 33.txt 333.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three$ mkdir four
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three$ cd four
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four$ touch 4.txt 44.txt 444.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four$ mkdir five
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four$ cd five
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ touch 5.txt 55.txt 555.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ cd ~
+
+********************************************************************************************************************************************************************************
+
+Qustion 8.
+
+Ans -> 
+
+1.
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five
+555.txt  55.txt  5.txt
+
+2.
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ cat >> /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/44.txt
+Ahire Shantanu
+
+3.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ rm /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five/555.txt
+
+4.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01$ cd one/two/three/four/five
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$
+
+5.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ cd ../../
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three$ cat >> 3.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three$ cat 3.txt
+DAC
+
+6.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ ls ../../../
+222.txt  22.txt  2.txt  three
+
+
+7.
+
+sunbeam@sunbeam-Inspiron-3593:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ rm ../../../222.txt
+
+
+8.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/four/five$ cd ../../../../
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$
+
+
+9.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ rm two/three/four/five/5.txt
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ rm two/three/four/five/55.txt
+
+
+10.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ rmdir two/three/four/five
+
+
+11.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ rm -r two/three/four
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ ls two/three/four
+ls: cannot access 'two/three/four': No such file or directory
+
+
+12.
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~/Documents/PERSONAL_DATA/OS/Assignment-01/one$ cd ~
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ 
+
+********************************************************************************************************************************************************************************
+
+Qustion 9.
+
+Ans -> 
+	ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ touch -t 202005271430 /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/3.txt
+
+Changed Time Stamp:
+
+ashish@ashish-HP-Pavilion-Laptop-14-ec0xxx:~$ ls -lt /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/3.txt
+-rw-rw-r-- 1 sunbeam sunbeam 3 May 27  2020 /home/sunbeam/Documents/PERSONAL_DATA/OS/Assignment-01/one/two/three/3.txt
+
+
